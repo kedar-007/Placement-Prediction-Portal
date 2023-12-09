@@ -1,0 +1,338 @@
+{% extends 'student/studentbase.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Company Page</title>
+    <style>
+      /* CSS for the body */
+      body {
+        font-family: 'Roboto', sans-serif;
+        color: #333;
+        background-color: #f7f7f7;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* CSS for the header */
+      header {
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 32px;
+      }
+      header img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+      }
+      header button {
+        background-color: #03a9f4;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+      }
+      header button:hover {
+        background-color: #0288d1;
+      }
+      
+      /* CSS for the main content */
+      main {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+      h2 {
+        margin-top: 0;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .company-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 20px;
+      }
+      .company-grid img {
+        max-width: 100%;
+        height: auto;
+      }
+      .company {
+        background-color: #fff;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 20px;
+        transition: box-shadow 0.2s ease-in-out;
+      }
+      .company:hover {
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+      }
+      .company h2 {
+        margin-top: 0;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .take-test-btn {
+        display: block;
+        margin: 20px auto 0;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        background-color: #0077b6;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+      .take-test-btn:hover {
+        background-color: #023e8a;
+      }
+    </style>
+  </head>
+  <body>
+   
+    
+    <main>
+      <h2>Dear Candidate you are eligible for this companies !!</h2>
+      <h2>MECHNICAL BRANCH</h2>
+    
+      <div class="company-grid">
+        <div       class="company">
+      <img src="{% static 'LOGOS\MECH\ashok leyland.png' %}" alt="Company 1 Logo">
+      <h2>ASHOK LEYLAND</h2>
+      
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS\MECH\atlas copco.png' %}" alt="Company 2 Logo">
+      <h2>ATLAS COPCO</h2>
+      
+      
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS\MECH\bharat froge.png' %}" alt="Company 3 Logo">
+      <h2>BHARAT FORGE</h2>
+      
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS\MECH\bhel.png' %}" alt="Company 4 Logo">
+      <h2>BHEL</h2>
+      
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS\MECH\bhushan power and steel.png' %}" alt="Company 5 Logo">
+      <h2>BHUSHAN POWER & STEEL</h2>
+      
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS\MECH\bosch.png' %}" alt="Company 6 Logo">
+      <h2>BOSCH</h2>
+      
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS\MECH\cummins india.png' %}" alt="Company 7 Logo">
+      <h2>CUMMINS INDIA</h2>
+      
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS\MECH\dilip buildcon.png' %}" alt="Company 8 Logo">
+      <h2>DILIP BUILDCON</h2>
+      
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS\MECH\fiat.png' %}" alt="Company 9 Logo">
+      <h2>FIAT</h2>
+      
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS\MECH\forbes marshall.png' %}" alt="Company 10 Logo">
+      <h2>FORBES MARHSALL</h2>
+
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS\MECH\force motors.png' %}" alt="Company 11 Logo">
+      <h2>FORCE MOTORS</h2>
+
+     
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\MECH\hyundai construction equipment.png' %}" alt="Company 12 Logo">
+        <h2>HYUNDAI CONSTRUCTION EQUIPMENT</h2>
+      
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\MECH\jcb india.png' %}" alt="Company 13 Logo">
+        <h2>JCB INDIA</h2>
+      
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\MECH\jsw steel.png' %}" alt="Company 14 Logo">
+        <h2>JSW STEEL</h2>
+      
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\MECH\kirloskar pneumatic.png' %}" alt="Company 15 Logo">
+        <h2>KIRLOSKAR PNEUMATIC</h2>
+      
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\MECH\kpt.png' %}" alt="Company 16 Logo">
+        <h2>KPT</h2>
+     
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\MECH\L&T.png' %}" alt="Company 17 Logo">
+        <h2>L&T</h2>
+      
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\MECH\mahindra and mahindra.png' %}" alt="Company 18 Logo">
+        <h2>MAHINDRA & MAHINDRA</h2>
+     
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\MECH\maruti suzuki.png' %}" alt="Company 19 Logo">
+        <h2>MARUTI SUZUKI</h2>
+     
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\MECH\mercedes benz.png' %}" alt="Company 20 Logo">
+        <h2>MERCEDES-BENZ</h2>
+     
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\MECH\mrf.png' %}" alt="Company 21 Logo">
+        <h2>MRF</h2>
+      
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\MECH\offshore infrastructure.png' %}" alt="Company 22 Logo">
+        <h2>OFFSHORE INFRASTRUCTURE</h2>
+     
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\MECH\sandvik aisa.png' %}" alt="Company 23 Logo">
+        <h2>SANDVIK ASIA</h2>
+    
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\MECH\schindler.png' %}" alt="Company 24 Logo">
+        <h2>SCHINDLER</h2>
+      
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\MECH\tata steel.png' %}" alt="Company 25 Logo">
+        <h2>TATA STEEL</h2>
+     
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\MECH\thermax.png' %}" alt="Company 26 Logo">
+        <h2>THERMAX</h2>
+      
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\MECH/thyssenkrupp.png' %}" alt="Company 27 Logo">
+        <h2>THYSSENKRUPP</h2>
+     
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\MECH\tvs.png' %}" alt="Company 28 Logo">
+        <h2>TVS</h2>
+      
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\MECH\vaaman engineers.png' %}" alt="Company 29 Logo">
+        <h2>VAAMAN ENGINEERS</h2>
+     
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\MECH\wheels india.png' %}" alt="Company 30 Logo">
+        <h2>WHEELS INDIA </h2>
+      </div>
+
+      
+      
+      
+    </div>
+    <br>
+    <br>
+    <h2>CSE/IT BRANCH</h2>
+    <div class="company-grid">
+      <div class="company">
+        <img src="{% static 'LOGOS\IT\atos.png' %}" alt="Company 6 Logo">
+        <h2><a href="https://atos.net/en//">ATOS</a></h2>
+        
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\IT\cognizant.png' %}" alt="Company 13 Logo">
+        <h2><a href="https://www.cognizant.com/in/en//">COGNIZANT</a></h2>
+        
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\IT\hcl.png' %}" alt="Company 22 Logo">
+        <h2><a href="https://www.hcltech.com//">HCL</a></h2>
+       
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\IT\hexaware.png' %}" alt="Company 23 Logo">
+        <h2><a href="https://hexaware.com//">HEXAWARE</a></h2>
+        
+     </div>
+     <div class="company">
+      <img src="{% static 'LOGOS\IT\kpit.png' %}" alt="Company 31 Logo">
+      <h2><a href="https://www.kpit.com//">KPIT</a></h2>
+      
+     </div>
+     <div class="company">
+      <img src="{% static 'LOGOS\IT\persistent.png' %}" alt="Company 37 Logo">
+      <h2><a href="https://www.persistent.com//">PERSISTENT</a></h2>
+     
+   </div>
+   <div class="company">
+    <img src="{% static 'LOGOS\IT\sonata software.png' %}" alt="Company 41 Logo">
+    <h2><a href="https://www.sonata-software.com//">SONATA SOFTWARE</a></h2>
+   
+</div>
+<div class="company">
+  <img src="{% static 'LOGOS\IT\tcs.png' %}" alt="Company 44 Logo">
+  <h2><a href="https://www.tcs.com//">TCS</a></h2>
+  
+ </div>
+ <div class="company">
+  <img src="{% static 'LOGOS\IT\tech Mahindra.png' %}" alt="Company 45 Logo">
+  <h2><a href="https://www.techmahindra.com/en-in/?f=1479822329//">TECH MAHINDRA</a></h2>
+ 
+
+</div>
+<div class="company">
+  <img src="{% static 'LOGOS\IT\Wipro.png' %}" alt="Company 49 Logo">
+  <h2><a href="https://www.wipro.com//">WIPRO</a></h2>
+  
+</div>
+<div><a href="http://127.0.0.1:8000/student/student-exam">
+  <button class="take-test-btn">Take Test</button>
+</a></div>
+  </div>
+</main>
+</div>
+
+<br>
+<br>
+</main>
+{% endblock content %}
+
+
+

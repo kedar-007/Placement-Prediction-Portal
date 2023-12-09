@@ -1,0 +1,69 @@
+{% extends 'student/studentbase.html' %}
+{% block content %}
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Placement Prediction Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F5F5F5;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #FFFFFF;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      color: #ff0000;
+      text-align: center;
+    }
+    
+    p {
+      color: #333333;
+      line-height: 1.5;
+    }
+    
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #0066CC;
+      color: #FFFFFF;
+      text-decoration: none;
+      border-radius: 3px;
+    }
+    
+    .button:hover {
+      background-color: #004C99;
+    }
+    .logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1> Dear Candidate Sorry!!!!</h1>
+    <img src="{% static 'images\red.png'%}" alt="logo" style="width: 100px; height: auto;"class="logo">
+    <p>You have Failed  the test.</p>
+    <p>You are not eligible for the interview rounds..</p>
+    <p>Please Improve Your Skills and Appear Again</p>
+    <p>Best regards,</p>
+    <p>Team Virtuals</p>
+    <div style="text-align: center;">
+      <a class="button" href="http://127.0.0.1:8000/student/student-dashboard">Go to home page</a>
+    </div>
+  </div>
+</body>
+</html>
+{% endblock content %}

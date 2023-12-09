@@ -1,0 +1,281 @@
+{% extends 'student/studentbase.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Company Page</title>
+    <style>
+      /* CSS for the body */
+      body {
+        font-family: 'Roboto', sans-serif;
+        color: #333;
+        background-color: #f7f7f7;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* CSS for the header */
+      header {
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 32px;
+      }
+      header img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+      }
+      header button {
+        background-color: #03a9f4;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+      }
+      header button:hover {
+        background-color: #0288d1;
+      }
+      
+      /* CSS for the main content */
+      main {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+      h2 {
+        margin-top: 0;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .company-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 20px;
+      }
+      .company-grid img {
+        max-width: 100%;
+        height: auto;
+      }
+      .company {
+        background-color: #fff;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 20px;
+        transition: box-shadow 0.2s ease-in-out;
+      }
+      .company:hover {
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+      }
+      .company h2 {
+        margin-top: 0;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .take-test-btn {
+        display: block;
+        margin: 20px auto 0;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        background-color: #0077b6;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+      .take-test-btn:hover {
+        background-color: #023e8a;
+      }
+    </style>
+  </head>
+  <body>
+   
+    
+    <main>
+      <h2>Dear Candidate you are eligible for this companies !!</h2>
+      <h2>CHEMICAL BRANCH</h2>
+    
+      <div class="company-grid">
+        <div       class="company">
+      <img src="{% static 'LOGOS\CHEMICAL\aarti industries.png' %}" alt="Company 1 Logo">
+      <h2>AARTI INDUSTIRES</h2>
+      
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS\CHEMICAL\akzo nobel.png' %}" alt="Company 2 Logo">
+      <h2>AKZO NOBEL</h2>
+      
+      
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS\CHEMICAL\ampacet.png' %}" alt="Company 3 Logo">
+      <h2>AMPACET</h2>
+      
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS\CHEMICAL\anupam rasayan.png' %}" alt="Company 4 Logo">
+      <h2>ANUPAM RASAYAN</h2>
+      
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS\CHEMICAL\arkema.png' %}" alt="Company 5 Logo">
+      <h2>ARKEMA</h2>
+      
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS\CHEMICAL\atul.png' %}" alt="Company 6 Logo">
+      <h2>ATUL</h2>
+      
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS\CHEMICAL\balaji amines.png' %}" alt="Company 7 Logo">
+      <h2>BALAJI AMINES</h2>
+      
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS\CHEMICAL\basf.png' %}" alt="Company 8 Logo">
+      <h2>BASF</h2>
+      
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS\CHEMICAL\bayer.png' %}" alt="Company 9 Logo">
+      <h2>BAYER</h2>
+      
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS\CHEMICAL\bharat rasayan.png' %}" alt="Company 10 Logo">
+      <h2>BHARAT RASAYAN</h2>
+
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS\CHEMICAL\chambal.png' %}" alt="Company 11 Logo">
+      <h2>CHAMBAL FERTILISERS & CHEMICALS</h2>
+
+     
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\CHEMICAL\coromandel.png' %}" alt="Company 12 Logo">
+        <h2>CORONAMDEL</h2>
+      
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\CHEMICAL\deepak fertilisers and petrochemicals.png' %}" alt="Company 13 Logo">
+        <h2>DEEPAK FERTILISERS & PETROCHEMICALS</h2>
+      
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\CHEMICAL\dow chemical.png' %}" alt="Company 14 Logo">
+        <h2>DOW CHEMICAL</h2>
+      
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\CHEMICAL\ghcl.png' %}" alt="Company 15 Logo">
+        <h2>GHCL</h2>
+      
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\CHEMICAL\gujarat alkalies.png' %}" alt="Company 16 Logo">
+        <h2>GUJARAT ALKALIES</h2>
+     
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\CHEMICAL\hikal.png' %}" alt="Company 17 Logo">
+        <h2>HIKAL</h2>
+      
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\CHEMICAL\india glycols.png' %}" alt="Company 18 Logo">
+        <h2>INDIA GLYCOLS</h2>
+     
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\CHEMICAL\indian potash.png' %}" alt="Company 19 Logo">
+        <h2>INDIAN POTASH</h2>
+     
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\CHEMICAL\jayant agro.png' %}" alt="Company 20 Logo">
+        <h2>JAYANT AGRO-ORGANICS</h2>
+     
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\CHEMICAL\meghmani.png' %}" alt="Company 21 Logo">
+        <h2>MEGHMANI</h2>
+      
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\CHEMICAL\nacl.png' %}" alt="Company 22 Logo">
+        <h2>NACL</h2>
+     
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\CHEMICAL\PI industries.png' %}" alt="Company 23 Logo">
+        <h2>PI INDUSTIRES</h2>
+    
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\CHEMICAL\pidilite.png' %}" alt="Company 24 Logo">
+        <h2>PIDILITE</h2>
+      
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\CHEMICAL\rashtriya chemicals.png' %}" alt="Company 25 Logo">
+        <h2>RASHTRIYA CHEMICALS</h2>
+     
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\CHEMICAL\reliance.png' %}" alt="Company 26 Logo">
+        <h2>RELIANCE INDUSTIRES</h2>
+      
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\CHEMICAL\solar industries india.png' %}" alt="Company 27 Logo">
+        <h2>SOLAR INDUSTRIES INDIA</h2>
+     
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\CHEMICAL\sudarshan.png' %}" alt="Company 28 Logo">
+        <h2>SUDARSHAN</h2>
+      
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\CHEMICAL\tata chemicals.png' %}" alt="Company 29 Logo">
+        <h2>TATA CHEMICALS</h2>
+     
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS\CHEMICAL\upl ltd.png' %}" alt="Company 30 Logo">
+        <h2>UPL LIMITED</h2>
+      </div>
+      <div><a href="http://127.0.0.1:8000/student/student-exam">
+        <button class="take-test-btn">Take Test</button>
+      </a></div>
+
+      
+      
+      
+    </div>
+  </div>
+</main>
+</div>
+<br>
+<br>
+</main>
+{% endblock content %}
+
+
+

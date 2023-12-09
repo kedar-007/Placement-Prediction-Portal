@@ -1,0 +1,386 @@
+{% extends 'student/studentbase.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Company Page</title>
+    <style>
+      /* CSS for the body */
+      body {
+        font-family: 'Roboto', sans-serif;
+        color: #333;
+        background-color: #f7f7f7;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* CSS for the header */
+      header {
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 32px;
+      }
+      header img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+      }
+      header button {
+        background-color: #03a9f4;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+      }
+      header button:hover {
+        background-color: #0288d1;
+      }
+      
+      /* CSS for the main content */
+      main {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+      h2 {
+        margin-top: 0;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .company-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 20px;
+      }
+      .company-grid img {
+        max-width: 100%;
+        height: auto;
+      }
+      .company {
+        background-color: #fff;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 20px;
+        transition: box-shadow 0.2s ease-in-out;
+      }
+      .company:hover {
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+      }
+      .company h2 {
+        margin-top: 0;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .take-test-btn {
+        display: block;
+        margin: 20px auto 0;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        background-color: #0077b6;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+      .take-test-btn:hover {
+        background-color: #023e8a;
+      }
+    </style>
+  </head>
+  <body>
+   
+    
+    <main>
+      <h2>Dear Candidate you are eligible for this companies !!</h2>
+    
+      <div class="company-grid">
+        <div       class="company">
+      <img src="{% static 'LOGOS/IT/Accenture.png' %}" alt="Company 1 Logo">
+      <h2><a href="https://www.accenture.com/">ACCENTURE</a></h2>
+     
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS/IT/adeptia.png' %}" alt="Company 2 Logo">
+      <h2><a href="https://www.adeptia.com//">ADEPTIA</a></h2>
+         
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS/IT\adobe.png' %}" alt="Company 3 Logo">
+      <h2><a href="https://www.adobe.com/careers.html">ADOBE</a></h2>
+        
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS/IT\Amazon.png' %}" alt="Company 4 Logo">
+      <h2><a href="https://www.amazon.jobs//">AMAZON</a></h2>
+      
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS/IT\amdocs.png' %}" alt="Company 5 Logo">
+      <h2><a href="https://www.amdocs.com//">AMDOCS</a></h2>
+    
+      
+    </div>
+    <div class="company">
+        <img src="{% static 'LOGOS/IT/atos.png' %}" alt="Company 6 Logo">
+      <h2><a href="https://atos.net/en//">ATOS</a></h2>
+      
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS/IT\birlasoft.png' %}" alt="Company 7 Logo">
+      <h2><a href="https://www.birlasoft.com//">BIRLASOFT</a></h2>
+        
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS/IT\bmc software.png' %}" alt="Company 8 Logo">
+      <h2><a href="https://www.bmc.com//">BMC SOFTWARE</a></h2>
+    
+    </div>
+    <div class="company">
+      <img src="{% static 'LOGOS/IT\cadence.png' %}" alt="Company 9 Logo">
+      <h2><a href="https://www.cadence.com/en_US/home.html">CADENCE</a></h2>
+       
+    </div>
+    <div class="company">
+        <img src="{% static 'LOGOS/IT\Capgemini.png' %}" alt="Company 10 Logo">
+      <h2><a href="https://www.capgemini.com/in-en//">CAPGEMINI</a></h2>
+    
+      
+   </div>
+    <div class="company">
+      <img src="LOGOS\IT\cisco.png" alt="Company 11 Logo">
+      <h2><a href="https://www.cisco.com//">CISCO</a></h2>
+      
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\Coforge.png' %}" alt="Company 12 Logo">
+        <h2><a href="https://www.coforge.com//">COFORGE</a></h2>
+        
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\cognizant.png' %}" alt="Company 13 Logo">
+        <h2><a href="https://www.cognizant.com/in/en//">COGNIZANT</a></h2>
+        
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\collabera.png' %}" alt="Company 14 Logo">
+        <h2><a href="https://collabera.com//">COLLABERA</a></h2>
+        
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\colt.png' %}" alt="Company 15 Logo">
+        <h2><a href="https://www.colt.net//">COLT</a></h2>
+        
+     
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\commvault.png' %}" alt="Company 16 Logo">
+        <h2><a href="https://www.commvault.com//">COMMVAULT</a></h2>
+        
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\comsoft.png' %}" alt="Company 17 Logo">
+        <h2><a href="https://www.comsoft.com//">COMSOFT</a></h2>
+       
+        </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\cyient.png' %}" alt="Company 18 Logo">
+        <h2><a href="https://www.cyient.com//">CYIENT</a></h2>
+       
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\Dell.png' %}" alt="Company 19 Logo">
+        <h2><a href="https://jobs.dell.com/search-jobs/India/375/2/1269750/22/79/50/2">DELL</a></h2>
+        
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\EY.png' %}" alt="Company 20 Logo">
+        <h2><a href="https://www.ey.com/en_in//">EY</a></h2>
+        
+      
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\grape city.png' %}" alt="Company 21 Logo">
+        <h2><a href="https://www.grapecity.com//">GRAPE CITY</a></h2>
+       
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\hcl.png' %}" alt="Company 22 Logo">
+        <h2><a href="https://www.hcltech.com//">HCL</a></h2>
+       
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\hexaware.png' %}" alt="Company 23 Logo">
+        <h2><a href="https://hexaware.com//">HEXAWARE</a></h2>
+        
+     </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\honeywell.png' %}" alt="Company 24 Logo">
+        <h2><a href="https://www.honeywell.com/us/en//">HONEYWELL</a></h2>
+        
+       </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\hp.png' %}" alt="Company 25 Logo">
+        <h2><a href="https://jobs.hp.com//">HP</a></h2>
+       
+      
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\ibm.png' %}" alt="Company 26 Logo">
+        <h2><a href="https://www.ibm.com/in-en//">IBM</a></h2>
+        
+       </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\igate.png' %}" alt="Company 27 Logo">
+        <h2><a href="https://igatetechnologies.lk//">IGATE</a></h2>
+       
+     </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\Infosys.png' %}" alt="Company 28 Logo">
+        <h2><a href="https://www.infosys.com//">INFOSYS</a></h2>
+        
+       </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\intuit.png' %}" alt="Company 29 Logo">
+        <h2><a href="https://www.intuit.com//">INTUIT</a></h2>
+       
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\itc.png' %}" alt="Company 30 Logo">
+        <h2><a href="https://www.itcinfotech.com//">ITC</a></h2>
+        
+      
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\kpit.png' %}" alt="Company 31 Logo">
+        <h2><a href="https://www.kpit.com//">KPIT</a></h2>
+        
+       </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\mindtree.png' %}" alt="Company 32 Logo">
+        <h2><a href="https://shift.mindtree.com//">MINDTREE</a></h2>
+       
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\Mphasis.png' %}" alt="Company 33 Logo">
+        <h2><a href="https://www.mphasis.com/home.html//">MPHASIS</a></h2>
+       
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\nagarro.png' %}" alt="Company 34 Logo">
+        <h2><a href="https://www.nagarro.com/en//">NAGARRO</a></h2>
+        
+     </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\oracle.png' %}" alt="Company 35 Logo">
+        <h2><a href="https://www.oracle.com/in//">ORACLE</a></h2>
+       
+     
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\paytm.png' %}" alt="Company 36 Logo">
+        <h2><a href="https://paytm.com/careers//">PAYTM</a></h2>
+        
+     </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\persistent.png' %}" alt="Company 37 Logo">
+        <h2><a href="https://www.persistent.com//">PERSISTENT</a></h2>
+       
+     </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\radix.png' %}" alt="Company 38 Logo">
+        <h2><a href="https://radix.website/">RADIX</a></h2>
+        
+    </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\rapidops.png' %}" alt="Company 39 Logo">
+        <h2><a href="https://www.rapidops.com//">RAPIDOPS</a></h2>
+        
+    </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\sap.png' %}" alt="Company 40 Logo">
+        <h2><a href="https://www.sap.com/india/index.html//">SAP</a></h2>
+        
+        
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\sonata software.png' %}" alt="Company 41 Logo">
+        <h2><a href="https://www.sonata-software.com//">SONATA SOFTWARE</a></h2>
+       
+    </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\sophos.png' %}" alt="Company 42 Logo">
+        <h2><a href="https://www.sophos.com//">SOPHOS</a></h2>
+       
+    </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\tatvasoft.png' %}" alt="Company 43 Logo">
+        <h2><a href="https://www.tatvasoft.com//">TATVASOFT</a></h2>
+        
+    </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\tcs.png' %}" alt="Company 44 Logo">
+        <h2><a href="https://www.tcs.com//">TCS</a></h2>
+        
+       </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\tech Mahindra.png' %}" alt="Company 45 Logo">
+        <h2><a href="https://www.techmahindra.com/en-in/?f=1479822329//">TECH MAHINDRA</a></h2>
+       
+   
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\trigent.png' %}" alt="Company 46 Logo">
+        <h2><a href="https://www.trigent.com/">TRIGENT</a></h2>
+       
+   </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\virtusa.png' %}" alt="Company 47 Logo">
+        <h2><a href="https://www.virtusa.com//">VIRTUSA</a></h2>
+        
+      </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\wingify.png' %}" alt="Company 48 Logo">
+        <h2><a href="https://wingify.com//">WINGIFY</a></h2>
+       
+    </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\Wipro.png' %}" alt="Company 49 Logo">
+        <h2><a href="https://www.wipro.com//">WIPRO</a></h2>
+        
+     </div>
+      <div class="company">
+        <img src="{% static 'LOGOS/IT\zensar.png' %}" alt="Company 50 Logo">
+        <h2><a href="https://www.zensar.com/">ZENSAR</a></h2>
+       
+      </div>
+      <div><a href="http://127.0.0.1:8000/student/student-exam">
+        <button class="take-test-btn">Take Test</button>
+      </a></div>
+      
+    </div>
+  </div>
+</main>
+</div>
+
+<br>
+<br>
+</main>
+{% endblock content %}
+
+
+
